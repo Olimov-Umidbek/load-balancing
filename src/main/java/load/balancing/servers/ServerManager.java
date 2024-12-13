@@ -21,7 +21,7 @@ public class ServerManager {
 
     public void add(Server server) {
         lock.writeLock().lock();
-        if (serverList.size() >= properties.getServerLimit()) {
+        if (serverList.size() >= properties.serverLimit()) {
             lock.writeLock().unlock();
             throw new ServerListOutboundException("The server list reached to the limit, we cannot add a new server");
         }
