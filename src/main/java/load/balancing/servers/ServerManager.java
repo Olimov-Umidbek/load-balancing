@@ -9,7 +9,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 public class ServerManager {
-    protected final List<Server> serverList;
+    private final List<Server> serverList;
     private final Properties properties;
     private final ReadWriteLock lock;
 

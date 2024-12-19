@@ -5,7 +5,6 @@ import load.balancing.balancer.impl.RobinRoundImpl;
 import load.balancing.balancer.impl.WeightedRobinRoundImpl;
 import load.balancing.conf.Properties;
 import load.balancing.exception.LoadBalancerAlgorithmNotFoundException;
-import load.balancing.model.enums.LoadBalancerAlgorithm;
 import load.balancing.servers.ServerManager;
 
 public class LoadBalancerFactory {
